@@ -30,8 +30,8 @@ public class JankenGame {
         if (playerChoice == computerChoice) {
             return "Draw";
         } else if ((playerChoice == ROCK && computerChoice == SCISSORS) ||
-                   (playerChoice == PAPER && computerChoice == ROCK) ||
-                   (playerChoice == SCISSORS && computerChoice == PAPER)) {
+                (playerChoice == PAPER && computerChoice == ROCK) ||
+                (playerChoice == SCISSORS && computerChoice == PAPER)) {
             return "Player Wins";
         } else {
             return "Computer Wins";
