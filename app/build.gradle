@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'jp.ac.uryukyu.ie.e245739'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+mainClassName = 'jp.ac.uryukyu.ie.e245739.Main'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'jp.ac.uryukyu.ie.e245739.Main'
+    }
+}

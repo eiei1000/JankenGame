@@ -1,0 +1,5 @@
+rootProject.name = 'JankenGame'
+
+// src/main と src/test ディレクトリを含める
+include 'src/main/java'
+include 'src/test/java'
